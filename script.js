@@ -1,6 +1,6 @@
 
 let reset=document.querySelector('#reset');
-let grid=document.querySelector('#grid');
+let grid=document.querySelector('#gridplacement');
 let show=document.createElement('div');
 show.id='show';
 document.body.appendChild(show);
@@ -128,8 +128,8 @@ function makegrid(units) {;
             addme.id="mydiv"+i+"-"+j;
             addme.classList.add('grid');
             if(checkgrid.checked===false)addme.style.border="1px solid transparent";
-            addme.style.setProperty('width',unit+'px');
-            addme.style.setProperty('height',unit+'px');
+            addme.style.setProperty('width',10+'px'); //unit
+            addme.style.setProperty('height',10+'px'); //unit
             row.appendChild(addme);
         }
         grid.appendChild(row);
