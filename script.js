@@ -117,7 +117,7 @@ function colorgrid(e) {
 function makegrid(units) {;
     grid.innerHTML="";
     //Check for dimensions
-    let vheight=screen.availHeight-300;
+    let vheight=screen.availHeight-350;
     let unit=vheight/units;
     for(let i=1;i<=units;i++) {
         let string='';
@@ -128,8 +128,8 @@ function makegrid(units) {;
             addme.id="mydiv"+i+"-"+j;
             addme.classList.add('grid');
             if(checkgrid.checked===false)addme.style.border="1px solid transparent";
-            addme.style.setProperty('width',10+'px'); //unit
-            addme.style.setProperty('height',10+'px'); //unit
+            addme.style.setProperty('width',unit+'px'); //unit
+            addme.style.setProperty('height',unit+'px'); //unit
             row.appendChild(addme);
         }
         grid.appendChild(row);

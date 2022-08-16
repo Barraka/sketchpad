@@ -1,26 +1,27 @@
-html, body {
+html, body {    
+    height:100%;    
+}
+body {
+    overflow: auto;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(59, 59, 59);
     margin:0px;
-    height:100%;
 }
 #title{
-    font-size:60px;
+    font-size:6em;
     background-color: rgb(165, 165, 165);
     font-family:DejaVuSans,Verdana, Geneva, Tahoma, sans-serif;
     color:rgb(0, 117, 255);
     font-weight: 900;
-    padding: 5px 30px;  
-
+    padding: 5px 30px;
 }
 #container {
     border-radius: 10px;
-    /* height:100%; */
-    /* flex:1; */
-    display: flex;
+    display:flex;
+    flex-direction: column;
 }
 #second {
     display:flex;
@@ -48,7 +49,7 @@ html, body {
 
 #controls, #right {
     background-color: rgb(165, 165, 165);
-    width:350px;
+    padding:10px;
     margin:-1px;
     gap:20px;
 }
@@ -92,7 +93,7 @@ html, body {
 #grid {
     display: flex;
     flex-direction: column;
-    height:100%;
+    height:100%;    
 }
 #gridtop, #gridbottom {
     flex:1;
@@ -101,10 +102,6 @@ html, body {
 
 .row {
     display: flex;
-}
-#container {
-    display:flex;
-    flex-direction: column;
 }
 
 #bottom {
